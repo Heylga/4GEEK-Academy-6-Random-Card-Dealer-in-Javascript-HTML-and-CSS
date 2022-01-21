@@ -2,6 +2,9 @@ const suits = ["♥", "♦", "♠", "♣"]
 const value = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
+window.onload = function (){
+    console.log("Card Deck Generator")
+}
 function getRandomArbitrary(1, 10) {
     return Math.random(.card-body) * (max - min) + min;
   }
