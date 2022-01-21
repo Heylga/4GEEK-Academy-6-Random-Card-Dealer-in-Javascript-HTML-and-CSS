@@ -5,28 +5,14 @@ let cardheader = document.querySelector(".card-header");
 let cardfooter = document.querySelector(".card-footer");
 
 const randomIndex = (arr) => Math.floor(Math.random() * arr.length);
-const getNumber = (i, arr) => arr[i];
-const getSuit = (i, arr) => arr[i];
+const getNumber = (arr, i) => arr[i];
+const getSuit = (arr, i) => arr[i];
 
-window.onload () => { 
-    cardheader.innerHTML = getNumber(randomIndex(suits), suits);
-    cardbody.innerHTML = getSuit(randomIndex(numbers), numbers);
-    cardfooter.innerHTML = getNumber(randomIndex(suits), suits);
+
+
+window.onload = () => { 
+    cardheader.innerHTML = getSuit(suits, randomIndex(suits));
+    cardbody.innerHTML = getNumber(numbers, randomIndex(numbers));
+    cardfooter.innerHTML = getSuit(suits, randomIndex(suits));
 };
 
-
-// console.log (randomIndex(suits));
-
-// window.onload () => { 
-//     document.querySelector('.card').classList.add(generateRandomSuit());
-//     document.querySelector('.card').innerHTML = generateRandomNumber();
-// };
-
-// let generateRandomNumber = () => {
-//     let indexNumbers = Math.floor(Math.random() * numbers.length);
-//     return numbers[indexNumbers];
-// };
-// let generateRandomSuit = () => {
-//     let indexSuit = Math.floor(Math.random() * suits.length);
-//     return suit[indexSuit];
-// };
