@@ -1,116 +1,32 @@
-const suits = ["♥", "♦", "♠", "♣"]
-const numbers = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+const suits = ["♥", "♦", "♠", "♣"];
+const numbers = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+let cardbody = document.querySelector(".card-body");
+let cardheader = document.querySelector(".card-header");
+let cardfooter = document.querySelector(".card-footer");
 
-let randomIndex = (arr) => Math.floor(Math.random() * arr.length);
-console.log (randomIndex(suits))
+const randomIndex = (arr) => Math.floor(Math.random() * arr.length);
+const getNumber = (i, arr) => arr[i];
+const getSuit = (i, arr) => arr[i];
 
-window.onload = () => {
-   document.querySelector('.card').classList.add(randomIndex());
+window.onload () => { 
+    cardheader.innerHTML = getNumber(randomIndex(suits), suits);
+    cardbody.innerHTML = getSuit(randomIndex(numbers), numbers);
+    cardfooter.innerHTML = getNumber(randomIndex(suits), suits);
 };
 
 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// class SUITS =["♥", "♦", "♠", "♣"]
-// class VALUES =[
-
-//     "J",
-//     "3",
-//     "8",
-// ]
-
-// get numberOfCards {
-//     return this.cards.length
-// }
-
-// shuffle() {
-//     for (let i = thisnumberOfCards - 1; i>0; i--)
-//     const newIndex = Math.floor(Math.random() * (i + 1))
-//     const oldValue = this.cards[newIndex]
-//     this.cards[newIndex]=this.cards[i]
-//     this.cards[i]= oldValue;
-//     }
-// }
-// }
-
-// class Deck {
-//     constructor() {
-//         this.cards = this.cards
-//     }
-//     shuffle() {
-//         this.card.sort((a, b) => Math.random() - .5)
-//     }
-// }
-
-// class Card {
-//     constructor(suit, value) {
-//         this.suit = suit;
-//         this.value = value;
-//     }
-// }
-
-// function fresh.Deck() {
-//     return SUITS.flatMap(suit => {
-//         return VALUES.map(value => {
-//             return new Card(suit, value)
-//     )}
-//     )}
-// }
-
-
+// console.log (randomIndex(suits));
+
+// window.onload () => { 
+//     document.querySelector('.card').classList.add(generateRandomSuit());
+//     document.querySelector('.card').innerHTML = generateRandomNumber();
+// };
+
+// let generateRandomNumber = () => {
+//     let indexNumbers = Math.floor(Math.random() * numbers.length);
+//     return numbers[indexNumbers];
+// };
+// let generateRandomSuit = () => {
+//     let indexSuit = Math.floor(Math.random() * suits.length);
+//     return suit[indexSuit];
+// };

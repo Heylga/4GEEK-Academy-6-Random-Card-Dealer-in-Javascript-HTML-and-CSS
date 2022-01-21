@@ -43,10 +43,3 @@ body {
     transform: rotate(180deg);
     padding: 10px;
 }
-
-
-&.spade:before; &.spade:after {content: '\2660';}
-&.heart:before; &.heart:after {content: '\2663'; color: red}
-&.club:before; &.club:after {content: '\2665';}
-&.diamond:before; &.diamond:after {content: '\2666'; color: red}
-
