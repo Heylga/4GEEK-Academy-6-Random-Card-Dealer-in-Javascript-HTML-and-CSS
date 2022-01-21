@@ -23,8 +23,8 @@ body {
     align-items: center;
 }
 
-&.:before {
-    font-size: 5pt;
+.card-header {
+    font-size: 20pt;
     size: 5%;
     position: absolute;
     color: red;
@@ -34,8 +34,8 @@ body {
 }
 
 
-&.:after {
-    font-size: 5pt;
+.card-footer {
+    font-size: 20pt;
     position: absolute;
     color: red;
     bottom: 0;
@@ -49,3 +49,4 @@ body {
 &.heart:before; &.heart:after {content: '\2663'; color: red}
 &.club:before; &.club:after {content: '\2665';}
 &.diamond:before; &.diamond:after {content: '\2666'; color: red}
+
