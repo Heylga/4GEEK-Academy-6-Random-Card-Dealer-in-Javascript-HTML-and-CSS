@@ -27,17 +27,14 @@ body {
     font-size: 20pt;
     size: 5%;
     position: absolute;
-    color: red;
     top: 0;
     left: 0;
     padding: 10px;
 }
 
-
 .card-footer {
     font-size: 20pt;
     position: absolute;
-    color: red;
     bottom: 0;
     right: 0;
     transform: rotate(180deg);
