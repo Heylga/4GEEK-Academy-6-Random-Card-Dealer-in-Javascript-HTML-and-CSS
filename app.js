@@ -2,12 +2,19 @@ const suits = ["♥", "♦", "♠", "♣"]
 const value = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
-window.onload = function (){
-    console.log("Card Deck Generator")
+window.onload = () => {
+    document.querySelector('.card').classList.add('heart');
+    setTimeout(() => {
+    document.querySelector('.card').classList.remove('heart');
+    document.querySelector('.card').classList.add('spade');
+    })
 }
-function getRandomArbitrary(1, 10) {
-    return Math.random(.card-body) * (max - min) + min;
-  }
+
+let randomCardNumber (){
+    let numb = math.floor(math.random() * 12);
+    let numbers = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+    let suits = ["Spades", "Clubs", "Diamonds", "Hearts"];
+}
 
   
 

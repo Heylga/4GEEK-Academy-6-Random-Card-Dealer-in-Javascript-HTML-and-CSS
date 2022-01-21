@@ -8,11 +8,11 @@ body {
 }
 
 .card {
+    font-size: 40pt;
     display: inline-block;
     padding: 10px;
     margin: auto;
     background-color: white;
-    color: red; 
     position: relative;
     height: 160px;
     width: 100px;
@@ -23,7 +23,9 @@ body {
     align-items: center;
 }
 
-.card-header {
+&.:before {
+    font-size: 5pt;
+    size: 5%;
     position: absolute;
     color: red;
     top: 0;
@@ -32,7 +34,8 @@ body {
 }
 
 
-.card-footer {
+&.:after {
+    font-size: 5pt;
     position: absolute;
     color: red;
     bottom: 0;
@@ -40,3 +43,9 @@ body {
     transform: rotate(180deg);
     padding: 10px;
 }
+
+
+&.spade:before; &.spade:after {content: '\2660';}
+&.heart:before; &.heart:after {content: '\2663'; color: red}
+&.club:before; &.club:after {content: '\2665';}
+&.diamond:before; &.diamond:after {content: '\2666'; color: red}
