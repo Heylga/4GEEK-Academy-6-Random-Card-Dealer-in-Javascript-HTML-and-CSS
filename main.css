@@ -7,7 +7,9 @@ body {
     justify-content:center;
 }
 
-.card-body {
+.card {
+    display: inline-block;
+    padding: 10px;
     margin: auto;
     background-color: white;
     color: red; 
@@ -22,38 +24,19 @@ body {
 }
 
 .card-header {
+    position: absolute;
     color: red;
-    bottom: .5rem;
-    right: .5rem;
-    transform: rotate(180deg);
+    top: 0;
+    left: 0;
+    padding: 10px;
 }
 
 
 .card-footer {
+    position: absolute;
     color: red;
-    bottom: .5rem;
-    right: .5rem;
+    bottom: 0;
+    right: 0;
     transform: rotate(180deg);
+    padding: 10px;
 }
-/* 
-.card.black{
-    color: black;
-}
-
-.card::before,
-.card::after, {
-position: absolute;
-content: attr(data-value);
-font-size: 1rem;
-}
-
-.card::before{
-top: .5rem;
-left: .5rem;
-}
-
-.card::after{
-    bottom: .5rem;
-    right: .5rem;
-    transform: rotate(180deg);
-} */
