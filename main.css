@@ -1,0 +1,59 @@
+body {
+    margin-top: 30%;
+    margin: 5%;
+    background-color: green;
+    display: grid;
+    cursor: pointer;
+    justify-content:center;
+}
+
+.card-body {
+    margin: auto;
+    background-color: white;
+    color: red; 
+    position: relative;
+    height: 160px;
+    width: 100px;
+    border: 1px solid black; 
+    border-radius: 8%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-header {
+    color: red;
+    bottom: .5rem;
+    right: .5rem;
+    transform: rotate(180deg);
+}
+
+
+.card-footer {
+    color: red;
+    bottom: .5rem;
+    right: .5rem;
+    transform: rotate(180deg);
+}
+/* 
+.card.black{
+    color: black;
+}
+
+.card::before,
+.card::after, {
+position: absolute;
+content: attr(data-value);
+font-size: 1rem;
+}
+
+.card::before{
+top: .5rem;
+left: .5rem;
+}
+
+.card::after{
+    bottom: .5rem;
+    right: .5rem;
+    transform: rotate(180deg);
+} */
