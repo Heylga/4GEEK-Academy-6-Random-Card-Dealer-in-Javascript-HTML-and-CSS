@@ -40,11 +40,6 @@ body {
     transform: rotate(180deg);
     padding: 10px;
 }
-
-.card-red {
-    color: red;
-}
-
-.card-black {
-    color: black;
-}
+/* 
+&.hearts::before, &.hearts::after:{content: '\2665'}
+&.diams::before, &.diams::after:{content: '\2665'} */
