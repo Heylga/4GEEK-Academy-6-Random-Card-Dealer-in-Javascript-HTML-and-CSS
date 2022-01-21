@@ -13,5 +13,14 @@ window.onload = () => {
     cardheader.innerHTML = icon;
     cardbody.innerHTML = getRandom(numbers, randomIndex(numbers));
     cardfooter.innerHTML = icon;
+    if (cardheader.innerHTML == '♥' || cardheader.innerHTML == '♦') {
+        icon.classlist.add('card-red');
+    } else {
+        cardheader.classList.add('card-black');
+    }
+    if (cardfooter.innerHTML == '♥' || cardheader.innerHTML == '♦') {
+        icon.classlist.add('card-red');
+    } else {
+        cardfooter.classList.add('card-black');
+    }
 };
-
