@@ -40,6 +40,3 @@ body {
     transform: rotate(180deg);
     padding: 10px;
 }
-/* 
-&.hearts::before, &.hearts::after:{content: '\2665'}
-&.diams::before, &.diams::after:{content: '\2665'} */

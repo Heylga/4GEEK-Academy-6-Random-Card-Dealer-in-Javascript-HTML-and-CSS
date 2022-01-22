@@ -1,5 +1,4 @@
-const suits = ["♥", "♦", "♠", "♣"];
-const redsuits = ["♥", "♦"];
+const suits = ["♥", "♠", "♣", "♦"];
 const numbers = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 let cardbody = document.querySelector(".card-body");
 let cardheader = document.querySelector(".card-header");
@@ -13,14 +12,12 @@ window.onload = () => {
     cardheader.innerHTML = icon;
     cardbody.innerHTML = getRandom(numbers, randomIndex(numbers));
     cardfooter.innerHTML = icon;
-    // if (cardheader.innerHTML == '♥' || cardheader.innerHTML == '♦') {
-    //     icon.classlist.add('card-red');
-    // } else {
-    //     cardheader.classList.add('card-black');
-    // }
-    // if (cardfooter.innerHTML == '♥' || cardheader.innerHTML == '♦') {
-    //     icon.classlist.add('card-red');
-    // } else {
-    //     cardfooter.classList.add('card-black');
-    // }
+
+    if (icon == '♥' || icon == '♦') {
+        cardheader.style.color='red';
+        cardfooter.style.color='red';
+    } else {
+        cardheader.style.color='black';
+        cardfooter.style.color='black';
+    };
 };
